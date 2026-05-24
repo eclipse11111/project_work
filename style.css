@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #193c7c, #235ab9);
+    color: #ffffff;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #ffd166;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    padding-bottom: 8px;
+}
+
+h3 {
+    margin: 15px 0 10px;
+    color: #ffffff;
+}
+
+.section {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+p, li {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+th {
+    background: #ffd166;
+    color: #333;
+    font-size: 18px;
+}
+
+td {
+    background: rgba(255,255,255,0.1);
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+tr:hover td {
+    background: rgba(255,255,255,0.2);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+a {
+    color: #90e0ef;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ffd166;
+    text-decoration: underline;
+}
+
+.moods img {
+    width: 280px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 10px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 3px solid rgba(255,255,255,0.3);
+}
+
+.moods img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+blockquote {
+    background: rgba(0,0,0,0.25);
+    padding: 20px;
+    border-left: 6px solid #ffd166;
+    border-radius: 15px;
+    font-size: 20px;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .moods img {
+        width: 100%;
+        height: auto;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+.mood-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.mood-card {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+.mood-card:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+.mood-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s;
+}
+
+
+
+.mood-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 18px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(218, 197, 13);
+    letter-spacing: 1px;
+}
+
+.movies-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.movie-card {
+    width: 280px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-10px) scale(1.04);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.movie-info {
+    padding: 18px;
+    text-align: center;
+}
+
+.movie-info h3 {
+    margin-bottom: 12px;
+    color: #ffd166;
+    font-size: 20px;
+}
+
+.movie-info a {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #ffd166;
+    color: #222;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.movie-info a:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+.finland-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.finland-image {
+    width: 420px;
+    max-width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: 0.4s;
+}
+
+.finland-image:hover {
+    transform: scale(1.03);
+}
+
+.finland-text h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #ffd166;
+}
+
+.finland-text p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.map-title {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.slideshow-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slideshow-container img {
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: 0.5s;
+}
+
+.slideshow-container img:hover {
+    transform: scale(1.05);
+}
+
+.slide-buttons {
+    margin-top: 20px;
+}
+
+.slide-buttons button {
+    padding: 12px 25px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #ffd166;
+    color: #222;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.slide-buttons button:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+.theme-switch {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.switch {
+    position: relative;
+    width: 90px;
+    height: 45px;
+    display: inline-block;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #ffd166;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    left: 4px;
+    top: 4px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    transition: 0.4s;
+}
+
+.switch input:checked + .slider {
+    background: #235ab9;
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(45px);
+}
+
+.switch input:checked + .slider .icon {
+    transform: translate(47px, -50%);
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.4s;
+}
+
+.icon img {
+    width: 22px;
+    height: 22px;
+}
+
+.sketchfab-embed-wrapper iframe {
+    width: 100%;
+    max-width: 1800px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.button {
+    display: inline-block;
+    margin: 15px 0 20px 20px;
+    padding: 10px 18px;
+    background: #ffd166;
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.button:hover {
+    text-decoration: none;
+    background: white;
+    color: #222;
+    transform: scale(1.05);
+}
+
+.project-info {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.info-card {
+    width: 220px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.4s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.info-card:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+.info-card h3 {
+    margin-bottom: 12px;
+    color: #ffd166;
+    font-size: 22px;
+}
+
+.info-card p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .sketchfab-embed-wrapper iframe {
+        height: 300px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .sketchfab-embed-wrapper iframe {
+        height: 450px;
+    }
+}

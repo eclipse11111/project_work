@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя особиста сторінка</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link id="theme-light" rel="stylesheet" href="light.css">
+</head>
+<script src="script.js"></script>
+<body>
+    <a href="project.html" class="button">Проект</a>
+    <h1>Моя особиста сторінка</h1>
+
+    <div class="theme-switch">
+    <label class="switch">
+        <input type="checkbox" onchange="toggleTheme(this)">
+        <span class="slider">
+            <span class="icon">
+                <img
+                    id="theme-icon"
+                    src="https://w7.pngwing.com/pngs/929/127/png-transparent-computer-icons-graphy-encapsulated-postscript-quiet-moon-miscellaneous-photography-logo.png"
+                    alt="theme">
+            </span>
+        </span>
+    </label>
+    </div>
+
+    <div class="section">
+        <h2>Інформація про мене</h2>
+        <p><strong>Ім'я:</strong> Денис</p>
+        <p><strong>Email:</strong> denis.polschikov0203@gmail.com</p>
+    </div>
+
+    <div class="section">
+    <h2>Предмети попереднього семестру</h2>
+    <table>
+        <tr>
+            <th>Предмет</th>
+            <th>Викладач</th>
+            <th>Оцінка</th>
+        </tr>
+
+        <tr>
+            <td>Програмування C++</td>
+            <td>Іваненко І.І.</td>
+            <td>90</td>
+        </tr>
+
+        <tr>
+            <td>Вища математика</td>
+            <td>Петренко О.О.</td>
+            <td>88</td>
+        </tr>
+
+        <tr>
+            <td>Англійська мова</td>
+            <td>Сидоренко Н.М.</td>
+            <td>95</td>
+        </tr>
+
+        <tr>
+            <td>Комп'ютерні мережі</td>
+            <td>Коваленко В.П.</td>
+            <td>100</td>
+        </tr>
+
+        <tr>
+            <td>Бази даних</td>
+            <td>Мельник А.С.</td>
+            <td>92</td>
+        </tr>
+
+        <tr>
+            <td>Операційні системи</td>
+            <td>Гнатюк Л.В.</td>
+            <td>88</td>
+        </tr>
+
+        <tr>
+            <td>Веб-програмування</td>
+            <td>Шевченко Д.П.</td>
+            <td>98</td>
+        </tr>
+
+        <tr>
+            <td>Програмування GUI</td>
+            <td>Бондаренко Р.М.</td>
+            <td>98</td>
+        </tr>
+    </table>
+</div>
+
+    <div class="section">
+    <h2>Мої улюблені фільми</h2>
+    <div class="movies-container">
+        <div class="movie-card">
+            <img src="https://th.bing.com/th/id/R.d970a62a9acac1f23514d598ad7bd7cf?rik=G6TSSpNyruMDnw&riu=http%3a%2f%2fwww.impawards.com%2f1999%2fposters%2fmatrix_ver2_xlg.jpg&ehk=mGMtdAnxjXTVfEzlQUIvaD8%2fKPG8IxOllWV7FlkCEmw%3d&risl=&pid=ImgRaw&r=0" alt="Breaking Bad">
+            <div class="movie-info">
+                <h3>Матриця</h3>
+                <a href="https://www.imdb.com/title/tt0133093/" target="_blank">
+                    Переглянути
+                </a>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://s3.amazonaws.com/nightjarprod/content/uploads/sites/130/2021/08/19085635/gEU2QniE6E77NI6lCU6MxlNBvIx-scaled.jpg" alt="Interstellar">
+            <div class="movie-info">
+                <h3>Інтерстеллар</h3>
+                <a href="https://www.imdb.com/title/tt0816692/" target="_blank">
+                    Переглянути
+                </a>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://c8.alamy.com/comp/T037BC/brad-pitt-edward-norton-poster-fight-club-1999-T037BC.jpg" alt="Avengers Endgame">
+            <div class="movie-info">
+                <h3>Бійцівський клуб</h3>
+                <a href="https://www.imdb.com/title/tt0137523/" target="_blank">
+                    Переглянути
+                </a>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/11/IMG_2167-2.jpeg" alt="Game of Thrones">
+            <div class="movie-info">
+                <h3>Джокер</h3>
+                <a href="https://www.imdb.com/title/tt7286456/" target="_blank">
+                    Переглянути
+                </a>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://m.media-amazon.com/images/S/pv-target-images/d26b48f88d5398cad86d2fd26d32b258d43e51d4e2f949c3848be69a1e147446.jpg" alt="The Shawshank Redemption">
+            <div class="movie-info">
+                <h3>Втеча з Шоушенка</h3>
+                <a href="https://www.imdb.com/title/tt0111161/" target="_blank">
+                    Переглянути
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="section">
+        <h2>3 слова, які мене описують</h2>
+        <ul>
+            <li>Відповідальний</li>
+            <li>Наполегливий</li>
+            <li>Цілеспрямований</li>
+        </ul>
+    </div>
+
+    <div class="section">
+    <h2>Мої настрої</h2>
+    <div class="mood-container">
+        <div class="mood-card">
+            <img src="https://media.istockphoto.com/id/1869429682/photo/photo-of-positive-good-mood-guy-wear-checkered-shirt-smiling-showing-white-teeth-isolated.jpg?s=612x612&w=0&k=20&c=s87nK-KUJ2WNjMTGkkqYP4DK-_a1k4VFox9zRQVW55g=" alt="Щасливий">
+            <div class="mood-text">Щасливий</div>
+        </div>
+
+        <div class="mood-card">
+            <img src="https://img.freepik.com/premium-photo/full-shot-man-showing-sadness_776674-797929.jpg" alt="Сумний">
+            <div class="mood-text">Сумний</div>
+        </div>
+
+        <div class="mood-card">
+            <img src="https://as2.ftcdn.net/v2/jpg/00/52/52/91/1000_F_52529137_GxqDGxGqZxCwxpQQVdrPF31oypP1s5Qy.jpg" alt="Зараз">
+            <div class="mood-text">Зараз</div>
+        </div>
+    </div>
+</div>
+
+    <div class="section">
+        <h2>Улюблена цитата</h2>
+        <blockquote>
+            "Те, що нас не вбиває, робить нас сильнішими."
+            <br><br>
+            - Фрідріх Ніцше
+        </blockquote>
+    </div>
+
+    <div class="section">
+    <h2>Країна, яку я хочу відвідати</h2>
+    <div class="finland-section">
+        <img 
+            src="https://spacetourismguide.com/wp-content/uploads/2018/07/Northern-Lights-in-Finland-Heikki-Holstila-via-Flickr.jpg"
+            alt="Фінляндія"
+            class="finland-image"
+        >
+
+        <div class="finland-text">
+            <h3>Фінляндія</h3>
+            <p>
+                Фінляндія - одна з найщасливіших країн у світі, відома своєю
+                красивою природою, тисячами озер та північним сяйвом.
+            </p>
+
+            <p>
+                Взимку тут можна побачити справжню казкову атмосферу:
+                засніжені ліси та неймовірні зимові пейзажі.
+            </p>
+
+            <p>
+                Столиця Фінляндії - Гельсінкі. Країна також славиться високим
+                рівнем освіти, сучасними технологіями та чистим повітрям.
+            </p>
+        </div>
+    </div>
+
+    <h3 class="map-title">Карта Фінляндії</h3>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152242.0207198574!2d22.266630857726983!3d64.50408762293068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cadf629d8adf%3A0x2600b5523c25d70!2sFinland!5e0!3m2!1suk!2sua!4v1710000000000"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+</div>
+
+    <div class="section">
+    <h2>Слайд-шоу пейзажів</h2>
+    <div class="slideshow-container">
+        <img id="slide" 
+        src="https://images.pexels.com/photos/371633/pexels-photo-371633.jpeg?cs=srgb&dl=clouds-country-daylight-371633.jpg&fm=jpg"
+        alt="Landscape">
+
+        <div class="slide-buttons">
+            <button onclick="prevSlide()">Назад</button>
+            <button onclick="nextSlide()">Вперед</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

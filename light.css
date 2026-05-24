@@ -1,0 +1,92 @@
+body {
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #f5f7fa, #dbe9f4);
+    color: #222;
+}
+
+h1 {
+    color: #1e3c72;
+}
+
+h2 {
+    color: #235ab9;
+    border-bottom: 3px solid #235ab9;
+}
+
+h3 {
+    color: #1e3c72;
+}
+
+.section {
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+th {
+    background: #235ab9;
+    color: white;
+}
+
+td {
+    background: #f5f7fa;
+}
+
+tr:hover td {
+    background: #dbe9f4;
+}
+
+a {
+    color: #235ab9;
+}
+
+a:hover {
+    color: #ff8800;
+}
+
+blockquote {
+    background: #eef4fa;
+    border-left: 6px solid #235ab9;
+}
+
+.movie-card,
+.mood-card {
+    background: rgb(51, 48, 48);
+}
+
+.movie-info a {
+    background: #235ab9;
+    color: white;
+}
+
+.movie-info a:hover {
+    background: #ff8800;
+}
+
+.slide-buttons button {
+    background: #235ab9;
+    color: white;
+    font-family: Georgia, serif;
+}
+
+.slide-buttons button:hover {
+    background: #ff8800;
+}
+
+.button {
+    background: #235ab9;
+    color: white;
+}
+
+.button:hover {
+    color: white;
+    background: #ff8800;
+}
+
+.info-card {
+    background: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.info-card h3 {
+    color: #235ab9;
+}
